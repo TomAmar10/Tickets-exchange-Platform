@@ -1,0 +1,10 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.ReceivedOffers {
+   // Styled in globals.scss
+  .events-tickets-container{
+    @include flex-center(row);
+    justify-content: flex-start;
+  }
+}

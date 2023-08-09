@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.SingleFeedback {
+  @include flex-center(row);
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 3px 3px, rgba(0, 0, 0, 0.13) 0px 3px 6px;
+  border-radius: $border-radius;
+  background-color: white;
+  direction: ltr;
+  .left-side {
+    align-items: flex-start;
+    .rating-user {
+      @include flex-center(row);
+      justify-content: flex-start;
+      gap: 1rem;
+      .user-name {
+        margin: 0;
+      }
+      .time-create {
+        font-size: 0.9rem;
+      }
+      .image {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    .comment {
+      margin: 0.5rem 0 0;
+    }
+  }
+  .right-side {
+    @include flex-center(column);
+    .rate-span {
+      font-size: 0.9rem;
+    }
+  }
+}

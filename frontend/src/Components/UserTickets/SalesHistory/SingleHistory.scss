@@ -1,0 +1,81 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.SingleHistory{
+  @include flex-center(row);
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: $border-radius;
+  .bid-details {
+    @include flex-center(column);
+    width: 100%;
+    padding: 0 2rem;
+    .bid-date,
+    .status-span {
+      font-size: 0.9rem;
+      color: darken($disabled-color, 40%);
+    }
+    .arrow-container {
+      @include flex-center(row);
+      width: 100%;
+      .status-icon {
+        position: absolute;
+        background-color: white;
+        &.confirmed {
+          color: $green-color;
+        }
+        &.declined {
+          color: red;
+        }
+        &.pending {
+          color: #faaf00;
+        }
+      }
+      .long-arrow-body {
+        background-color: darken($color1, 30%);
+        height: 0.2rem;
+        width: 100%;
+      }
+      .arrow-head {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid darken($color1, 30%);
+        &.hebrew {
+          border-right: 10px solid darken($color1, 30%);
+          border-left: none;
+        }
+      }
+    }
+  }
+  .bidder,
+  .owner {
+    @include flex-center(column);
+    color: darken($color1, 30%);
+    text-decoration: none;
+    min-width: fit-content;
+    &:hover{
+      text-decoration: underline;
+    }
+    .user-name{
+      text-align: center;
+    }
+    .user-profile-image {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+    }
+    .name-and-rating {
+      @include flex-center(column);
+      .user-name {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+    }
+  }
+}

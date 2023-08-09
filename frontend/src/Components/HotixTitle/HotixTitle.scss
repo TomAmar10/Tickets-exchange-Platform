@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+
+.HotixTitle {
+  display: flex;
+  justify-content: center;
+  margin: 0rem 0 1rem;
+  text-shadow: 2px 2px 4px #000000;
+  align-items: flex-start;
+  &.hebrew{
+    direction: ltr;
+  }
+
+  .part2 {
+    cursor: pointer;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .part1 {
+    @extend .part2;
+    color: $color1;
+  }
+}
+
+.profile-page {
+  width: 100%;
+  justify-content: flex-end;
+  margin: 0;
+  &.hebrew{
+    direction: ltr;
+    justify-content: flex-start;
+  }
+  .part1,
+  .part2 {
+    margin: 0;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 5px #ffffff;
+  }
+}

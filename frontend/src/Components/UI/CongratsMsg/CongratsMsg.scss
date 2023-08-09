@@ -1,0 +1,29 @@
+@import "../../../styles/mixin.scss";
+@import "../../../styles/variables.scss";
+@import "../../../styles/globals.scss";
+
+.CongratsMsg {
+  @include flex-center(column);
+  justify-content: space-between;
+  text-align: center;
+  .congrats-header {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .congrats-paragraph {
+    font-size: 0.9rem;
+    max-width: 70%;
+    .show-name {
+      font-weight: bold;
+      display: block;
+    }
+    .thanks-hotix {
+      margin-top: 2rem;
+      display: block;
+      .hotix-brand {
+        font-weight: bold;
+        color: $color1;
+      }
+    }
+  }
+}

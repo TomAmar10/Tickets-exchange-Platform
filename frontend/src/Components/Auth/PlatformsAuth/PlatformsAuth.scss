@@ -1,0 +1,75 @@
+@import "../../../styles/mixin.scss";
+@import "../../../styles/variables.scss";
+
+.PlatformsAuth {
+  width: 100%;
+  text-align: center;
+  .or-separator {
+    margin: 1rem 0 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0 1rem;
+      color: rgb(121, 118, 118);
+      font-size: 0.9rem;
+    }
+  }
+  .suggest-using-platforms {
+    font-size: 0.9rem;
+  }
+  .connect-with-platforms {
+    @include flex-center(row);
+    justify-content: flex-start;
+    margin: 0.5rem 0;
+    gap: 1rem;
+
+    .platform-button {
+      border-radius: 5px;
+      border: 1px #ccc solid;
+      width: 100%;
+      height: 3rem;
+      cursor: pointer;
+      @include flex-center(row);
+      gap: 0.3rem;
+
+      &:hover {
+        background-color: darken($color2, 3%);
+      }
+      .continue-with {
+        font-size: 0.9rem;
+        font-weight: 400;
+      }
+
+      .facebook-icon {
+        color: #1877f2;
+        background-color: white;
+        border-radius: 50%;
+        font-size: 2rem;
+      }
+      .google-icon {
+        width: 2rem;
+      }
+    }
+
+    &.login-page {
+      @include flex-center(column);
+      .platform-button {
+        .continue-with {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .platform-brand {
+      font-size: 1.6rem;
+    }
+    .fa-facebook-f {
+      font-size: 1.3rem;
+      color: #1877f2;
+    }
+    img {
+      width: 1.8rem;
+    }
+  }
+}

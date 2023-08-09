@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.PopularEvents {
+  width: 100%;
+  margin: 5rem 0;
+  @include flex-center(column);
+  .popular-events-header {
+    font-weight: 600;
+    width: 85%;
+  }
+  .events-container {
+    width: 95%;
+    max-width: 90rem;
+    min-height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .PopularEvents {
+    margin-bottom: 5rem;
+    .events-container {
+      width: 90%;
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .PopularEvents {
+    .popular-events-header {
+      width: 43rem;
+    }
+    .events-container {
+      width: 43rem;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .PopularEvents {
+    .popular-events-header{
+      width: 100%;
+      text-align: center;
+    }
+    .events-container {
+      width: 80%;
+    }
+    .slick-dots {
+      margin: 0 auto -1rem;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .PopularEvents {
+    .events-container {
+      width: 350px;
+    }
+  }
+}

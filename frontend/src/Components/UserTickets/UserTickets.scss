@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.UserTickets {
+  // Styled in globals.scss
+  .events-tickets-container {
+    @include flex-center(column);
+    margin-top: 2rem;
+    .EventTicketsCard {
+      width: 100%;
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+      border-radius: 10px;
+      border: 1px lighten(#ccc, 10%) solid;
+      .event-image {
+        border-radius: 10px;
+        width: 10rem;
+        height: 10rem;
+      }
+      .event-details {
+        width: 100%;
+        padding: 0 2rem;
+        border-right: 1px lighten(#ccc, 10%) solid;
+        border-left: 1px lighten(#ccc, 10%) solid;
+        .event-name {
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+        .event-date,
+        .event-location {
+          font-size: 0.9rem;
+          margin: 0.2rem 0;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          p {
+            margin: 0;
+            span {
+              text-decoration: underline;
+            }
+          }
+          .details-icon {
+            font-size: 1.2rem;
+            color: lighten($color3, 25%);
+          }
+        }
+        .event-description {
+          margin-top: 1rem;
+          font-size: 0.8rem;
+          color: lighten($color3, 50%);
+        }
+      }
+      .tickets-section {
+        @include flex-center(column);
+        gap: 0.5rem;
+        .view-tickets-btn {
+          min-width: 10rem;
+          @include basic-button($color2);
+          color: $color1;
+          border: 1px $color1 solid;
+        }
+      }
+    }
+  }
+}

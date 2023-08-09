@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+@import "./variables.scss";
+@import "./mixin.scss";
+
+.root-english-language {
+  font-family: Poppins;
+}
+.root-hebrew-language {
+  font-family: "Varela Round", sans-serif;
+}
+
+main.container-main {
+  @include flex-center(column);
+  width: 100%;
+  overflow: hidden;
+  div.home-page-container {
+    @include flex-center(column);
+    width: 100%;
+  }
+  &.auth-container {
+    position: absolute;
+    top: 0;
+  }
+  &.hebrew {
+    direction: rtl;
+  }
+}
+
+.user-layout {
+  @include flex-center(column);
+  width: 100%;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  background-color: #dcdfec;
+  min-height: 100vh;
+
+  .page-container {
+    width: 100%;
+    max-width: 70rem;
+    .user-page-section {
+      width: 100%;
+      background-color: $color2;
+      padding: 1rem 6rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      .section-header {
+        font-weight: bold;
+        color: darken($color1, 20%);
+      }
+      hr {
+        border-color: darken(#ccc, 20%);
+      }
+    }
+  }
+}
+
+.background-holder {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.home-sideNav-container {
+  display: flex;
+}
+
+hr {
+  width: 100%;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.userTicketCard {
+  @include flex-center(column);
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  color: darken($color1, 30%);
+  height: 14rem;
+  width: 13.4rem;
+  padding: 0.5rem;
+  border-radius: $border-radius;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  .user-details {
+    text-decoration: none;
+    color: darken($color1, 30%);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: $border-radius;
+    @include flex-center(row);
+    justify-content: space-between;
+    width: 100%;
+    &:hover {
+      .user-name {
+        text-decoration: underline;
+      }
+    }
+    .user-profile-image {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+    }
+    .name-and-rating {
+      @include flex-center(column);
+      width: calc(100% - 2.5rem);
+      .user-name {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+      .ratings-amount {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .event-details {
+    @include flex-center(column);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    .event-name {
+      margin: 0;
+      font-weight: bold;
+      font-size: 1rem;
+      text-align: center;
+    }
+    .event-date {
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+  }
+  .ticket-details {
+    width: 100%;
+    min-height: 3rem;
+    .ticket-headers {
+      @include flex-center(row);
+      justify-content: space-between;
+      font-weight: bold;
+      h6 {
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        width: 50%;
+        margin: 0;
+      }
+      span {
+        font-size: 0.9rem;
+        margin-bottom: 0.2rem;
+      }
+    }
+    .ticket-info {
+      @include flex-center(row);
+      justify-content: space-between;
+      span {
+        width: 50%;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .show-tickets-area {
+    @include flex-center(column);
+    width: 100%;
+    label {
+      align-self: flex-start;
+      font-size: 0.8rem;
+    }
+    .show-tickets-button {
+      @include basic-button($color2);
+      font-size: 1rem;
+      width: 100%;
+      font-weight: 500;
+      color: darken($color1, 30%);
+      border: 1px darken($color2, 30%) solid;
+      .amount {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-right: 0.3rem;
+      }
+      &:hover {
+        background-color: lighten($color1, 48%);
+      }
+      &.active-seller {
+        background-color: darken($color1, 30%);
+        color: white;
+      }
+    }
+  }
+}
+
+.custom-input {
+  text-align: center;
+  background: none;
+  border: 1px #ccc solid;
+  border-radius: $border-radius;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  &:focus {
+    outline: none;
+    background-color: lighten($color1, 45%);
+    border-radius: $border-radius;
+  }
+}

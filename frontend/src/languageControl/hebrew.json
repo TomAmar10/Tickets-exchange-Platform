@@ -1,0 +1,345 @@
+{
+  "TopNavbar": {
+    "toggleLang": "החלף שפה",
+    "login": "התחבר",
+    "english": "English",
+    "hebrew": "עברית",
+    "modeSwitch": {
+      "seller": "מוכר",
+      "buyer": "קונה"
+    }
+  },
+  "MainAuth": {
+    "signin": "התחבר",
+    "signup": "הירשם",
+    "copyrights": "© כל הזכויות שמורת לדגכ גלדךכח לגדכ לךגדכדג יחגדכי דגיכחל דגיכחל ידחכל."
+  },
+  "LoginForm": {
+    "header": "התחבר",
+    "email": "כתובת אימייל",
+    "password": "סיסמא",
+    "loginBtn": "התחבר",
+    "forgotPassword": "שכחתי את הסיסמא",
+    "newAccount": "משתמש חדש"
+  },
+  "RegisterForm": {
+    "header": "יצירת משתמש חדש",
+    "quickProcess": "הליך מהיר ופשוט.",
+    "firstName": "שם פרטי",
+    "lastName": "שם משפחה",
+    "email": "כתובת אימייל",
+    "phone": "מספר פלאפון",
+    "password": "סיסמא",
+    "profilePicture": "העלאת תמונת פרופיל",
+    "imageError": "אנא וודא שהתמונה קטנה מ - 15,000 kb.",
+    "emailError": "קיים משתמש עם המייל הזה.",
+    "signupBtn": "הירשם",
+    "haveAccount": "יש לי משתמש קיים"
+  },
+  "PlatformsAuth": {
+    "or": "או",
+    "facebook": "התחבר עם פייסבוק",
+    "google": "התחבר עם גוגל"
+  },
+  "SendEmail": {
+    "header": "איתור החשבון שלך",
+    "description": "יש להזין את כתובת הדוא''ל כדי לחפש את החשבון שלך.",
+    "cancelBtn": "ביטול",
+    "searchBtn": "חיפוש",
+    "emailSent": "לינק לאיפוס הסיסמא נשלח למייל שלך",
+    "tryAgain": "לא קיבלת את המייל? נסה שוב בעוד  ",
+    "seconds": "שניות"
+  },
+  "Verification": {
+    "header": "אימות דוא''ל",
+    "description": "אנא כתוב את הקוד שנשלח אליך במייל",
+    "verifyBtn": "אימות משתמש",
+    "didntReceive": "לא קיבלת את הקוד?",
+    "sendAgain": "שלח שוב"
+  },
+  "NewPassword": {
+    "header": "סיסמא חדשה",
+    "enterPassword": "הכנס את הסיסמא",
+    "confirmPassword": "אשר את הסיסמא החדשה",
+    "resetBtn": "איפוס סיסמא",
+    "successMsg": "הסיסמא עודכנה בהצלחה!",
+    "tooLongErr": "תהליך האיפוס צריך להיות פחות מ - 5 דקות",
+    "samePasswordErr": "סיסמא ואישור סיסמא צריכות להיות זהות",
+    "goToLogin": "עבור לעמוד ההתחברות"
+  },
+  "ChooseMode": {
+    "hey": "היי, ",
+    "whatToDo": "מה תרצה לעשות היום?",
+    "sellBtn": "למכור כרטיס",
+    "buyBtn": "לקנות כרטיס"
+  },
+  "AdminData": {
+    "header": "שלום",
+    "userList": "רשימת משתמשים",
+    "eventList": "רשימת אירועים",
+    "firstName": "שם פרטי",
+    "lastName": "שם משפחה",
+    "phone": "מספר פלאפון",
+    "email": "אימייל",
+    "rating": "רייטינג",
+    "eventName": "שם אירוע",
+    "date": "תאריך",
+    "category": "קטגוריה",
+    "location": "מיקום",
+    "status": "סטטוס",
+    "approved": "אושר",
+    "waiting": "ממתין"
+  },
+  "HomeTopHeader": {
+    "header": "הקהילה היחידה למכירה וקניית כרטיסים שבנויה על אמון ובטחון ",
+    "paragraph": "קנה ומכור כרטיסים ללא שום חשש",
+    "searchPlaceholder": "חפש לפי אומן, אצטדיון או אירוע",
+    "noEvents": "אין אירועים להציג",
+    "seeAll": "ראה את כל התוצאות",
+    "createEvent": "האירוע שחיפשת לא קיים? לחץ כאן ליצירת אירוע חדש!",
+    "dates": "כל התאריכים",
+    "searchBtn": "חפש עכשיו"
+  },
+  "PopularEvents": {
+    "header": "אירועים פופולריים"
+  },
+  "UpcomingEvents": {
+    "header": "אירועים קרובים",
+    "weekDays": [
+      "כל השבוע",
+      "ראשון",
+      "שני",
+      "שלישי",
+      "רביעי",
+      "חמישי",
+      "שישי",
+      "שבת"
+    ],
+    "anyCategory": "כל הקטגוריות",
+    "noEvents": "אין אירועים בתאריך זה",
+    "viewAll": "ראה הכל"
+  },
+  "SideNav": {
+    "admin": "אדמין",
+    "home": "דף הבית",
+    "tickets": "כרטיסים",
+    "offers": "הצעות",
+    "wallet": "הארנק שלי",
+    "notifications": "התראות",
+    "createEvent": "יצירת אירוע חדש",
+    "favorites": "מועדפים",
+    "contact": "צור קשר",
+    "settings": "הגדרות",
+    "language": "Switch to English",
+    "logout": "התנתק"
+  },
+  "EventModal": {
+    "EventPreview": {
+      "about": "מידע",
+      "category": "קטגוריה",
+      "location": "מיקום",
+      "date": "תאריך",
+      "maxError": "* המקסימום למכירת כרטיסים לאירוע אחד הוא 6",
+      "detailsBtn": "פרטים נוספים",
+      "buyBtn": "קנה כרטיס",
+      "sellBtn": "מכור כרטיס",
+      "loginBtn":"התחבר"
+    },
+    "EventForm": {
+      "header": "צור אירוע חדש",
+      "eventName": "שם האירוע",
+      "eventNamePlaceholder": "ציין את שם האירוע",
+      "category": "קטגוריה",
+      "location": "מיקום",
+      "locationPlaceholder": "ציין את מיקום האיורע",
+      "description": "תיאור",
+      "descriptionPlaceholder": "כמה מילים על האירוע",
+      "image": "תמונה",
+      "imagePlaceholder": "שנה את תמונת האירוע",
+      "eventDate": "תאריך האירוע",
+      "createBtn": "צור עכשיו",
+      "approveBtn": "אשר אירוע"
+    },
+    "StepsDots": {
+      "step": "צעד"
+    },
+    "NextPrevButtons": {
+      "next": "הבא",
+      "prev": "הקודם"
+    },
+    "TicketsAmount": {
+      "howManySell": "?כמה כרטיסים ברצונך למכור",
+      "howManyBuy": "?כמה כרטיסים ברצונך לקנות",
+      "maxMsg1": "* ברשותך כבר ",
+      "maxMsg2": "כרטיסים למכירה, המקסימום הוא 6."
+    },
+    "SaleCompleted": {
+      "header": "!ברכות",
+      "sellerMsg": ".הכרטיסים שלך זמינים להצעות. צפה בכל הכרטיסים בפרופיל שלך, והישאר זמין לעדכונים נוספים",
+      "buyerMsg": "!ההצעה שלך נוספה בהצלחה. בהמשך תקבל התראה כאשר המוכר יגיב להצעתך. הישאר זמין לעדכונים נוספים, ובהצלחה",
+      "ticketsBtn": "הכרטיסים שלי",
+      "offersBtn": "ההצעות שלי"
+    },
+    "SellerModal": {
+      "TicketsDetails": {
+        "header": "אנא מלא את פרטי הכרטיס",
+        "types": ["רגיל", "VIP", "סטודנט"],
+        "currencies": ["USD", "ILS", "EUR"],
+        "type": "סוג",
+        "price": "מחיר הכרטיס",
+        "currency": "מטבע",
+        "seat": "מספר כסא",
+        "row": "שורה",
+        "area": "אזור",
+        "areaMsg": "למכירת כרטיסים מאזורים שונים - יש לפתוח מכירה חדשה *"
+      },
+      "TicketUpload": {
+        "header": "אנא העלה את הכרטיסים",
+        "done": "Done ✔",
+        "dragDrop": "גרור ושחרר",
+        "or": "או",
+        "browse": "דפדף",
+        "proof": "העלה הוכחה לכרטיס (קבלה למשל)",
+        "proofRequired": "העלה הוכחה..."
+      }
+    },
+    "BuyerModal": {
+      "SelectArea": {
+        "header": "בחר איזור"
+      },
+      "SellersSlider": {
+        "header": "בחר את המוכר שממנו תרצה לקנות",
+        "SingleSellerCard": {
+          "rated": "אנשים דירגו",
+          "seats": "כסאות",
+          "row": "שורה",
+          "tickets": "כרטיסים"
+        }
+      },
+      "PlaceBid": {
+        "header": "בחר כרטיסים והצע מחיר",
+        "seat": "כסא",
+        "row": "שורה",
+        "area": "איזור",
+        "total": "סה''כ מחיר"
+      },
+      "SecureDepositMsg": {
+        "hey": "היי ",
+        "notice": "אנא שים לב, ",
+        "paragraph": "שים לב שכרטיסך יחויב בפיקדון זמני על מנת לבטח את אמינות העסקה.",
+        "agreeMsg": "אני מסכים לתנאים",
+        "nextBtn": "הבא"
+      },
+      "PaymentDetails": {
+        "useSaved": "השתמש בכרטיס שמור:",
+        "mastercard": "מאסטרכארד",
+        "visa": "ויזה",
+        "name": "שם על גבי הכרטיס",
+        "number": "מספר כרטיס",
+        "expiry": "תאריך תפוגה:",
+        "ccv": "3 ספרות"
+      }
+    }
+  },
+  "UserProfile": {
+    "communities": "קהילות",
+    "comingSoon": "בקרוב...",
+    "tickets": " הכרטיסים של ",
+    "myTickets": "הכרטיסים שלי",
+    "viewMore": "ראה עוד",
+    "viewLess": "ראה פחות",
+    "feedbacks": "פידבקים",
+    "rated": "דירוג",
+    "history": "הסטוריית מכירות",
+    "favorites": "מועדפים",
+    "searchBtn": "חפש אירוע",
+    "noTickets": "לא קיימים כרטיסים למכירה",
+    "noFeedback": "אין פידבקים",
+    "noHistory": "אין הסטוריה להראות",
+    "noFavorites": "לא הוספת אף הופעה למועדפים",
+    "findEvent": "מצא אירוע"
+  },
+  "UserWallet": {
+    "balance": "סכום בחשבון",
+    "creditCards": "כרטיסי אשראי",
+    "addCard": "הוסף כרטיס חדש",
+    "activities": "פעילויות אחרונות",
+    "comingSoon": "בקרוב...",
+    "viewMore": "ראה עוד",
+    "coupons": "קופונים",
+    "giftCards": "גיפט קארדים"
+  },
+  "UserTickets": {
+    "ticketsForSale": "כרטיסים למכירה",
+    "purchased": "כרטיסים שקניתי",
+    "history": "הסטוריית כרטיסים",
+    "favorites": "מועדפים",
+    "viewMore": "ראה עוד",
+    "viewLess": "ראה פחות",
+    "findEvent": "מצא אירוע",
+    "comingSoon": "בקרוב...",
+    "nothingForSale": "אין כרטיסים למכירה",
+    "nothingPurchased": "לא נקנו כרטיסים",
+    "noHistory": "אין הסטוריה להראות",
+    "noFavorites": "לא הוספת למועדפים"
+  },
+  "UserOffers": {
+    "history": "הסטוריית הצעות",
+    "viewMore": "ראה עוד",
+    "comingSoon": "בקרוב...",
+    "noHistory": "אין הסטוריה להראות",
+    "offersSent": "הצעות ששלחתי",
+    "offersDeclined": "הצעות שסורבו",
+    "offersReceived": "הצעות שקיבלתי",
+    "noBids": "אין הצעות להציג",
+    "viewLess": "ראה פחות",
+    "findEvent": "מצא אירוע",
+    "SingleHistoryBid": {
+      "sentOn": "ההצעה נשלחה ב ",
+      "confirmedBy": "ההצעה אושרה על ידי",
+      "declinedBy": "ההצעה נדחתה על ידי",
+      "waitingFor": "ממתין לתגובה של",
+      "toResponse": ""
+    }
+  },
+  "confirmDeposit": "העבר פקדון",
+  "BidStatusModal": {
+    "header": "סטטוס אירוע",
+    "bidPrice": "מחיר הצעה",
+    "seat": "כסא",
+    "row": "שורה",
+    "area": "אזור",
+    "closeBtn": "סגור"
+  },
+  "SecureDepositMsg": {
+    "hey": "היי ",
+    "notice": "אנא שים לב, ",
+    "paragraph": "שים לב שכרטיסך יחויב בפיקדון זמני על מנת לבטח את אמינות העסקה.",
+    "agreeMsg": "אני מסכים לתנאים",
+    "nextBtn": "הבא"
+  },
+  "PaymentDetails": {
+    "useSaved": "השתמש בכרטיס שמור:",
+    "mastercard": "מאסטרכארד",
+    "visa": "ויזה",
+    "name": "שם על גבי הכרטיס",
+    "number": "מספר כרטיס",
+    "expiry": "תאריך תפוגה:",
+    "ccv": "3 ספרות"
+  },
+  "NoBidsToShow": {
+    "noEvents": "אין אירועים קרובים להצגה",
+    "nothingReceived": "לא קיבלת שום הצעה עדיין",
+    "nothingSent": "לא הצעת על אף כרטיס עדיין",
+    "lookingForTicket": "מחפש כרטיסים לאירוע שמתקרב?",
+    "lookingToSell": "מחפש אירוע למכור כרטיסים אליו?",
+    "lookingToBuy": "מחפש כרטיסים לאירוע מסוים?",
+    "clickHereBtn": "לחץ כאן"
+  },
+  "SingleUserEvent": {
+    "click": "לחץ כאן לצפייה ב",
+    "tickets": " כרטיסים ",
+    "ticket": "כרטיס",
+    "hide": "הסתר כרטיסים"
+  }
+}

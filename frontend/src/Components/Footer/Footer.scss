@@ -1,0 +1,131 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+
+.Footer-container {
+  width: 100%;
+  background-color: darken($color1, 40%);
+  color: $color2;
+
+  .Footer {
+    @include flex-center(row);
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 2rem 3rem;
+    margin-top: 5rem;
+
+    .footer-section {
+      @include flex-center(column);
+      align-items: flex-start;
+      width: 15%;
+      h5 {
+        margin: 1rem 0 1.5rem;
+      }
+      a {
+        margin-top: 0.1rem;
+        color: $color2;
+        text-decoration: none;
+        font-weight: lighter;
+        font-size: 0.9rem;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      p {
+        font-size: 0.9rem;
+        font-weight: lighter;
+      }
+
+      &:first-child {
+        width: 35%;
+      }
+      &:last-child {
+        width: 35%;
+      }
+    }
+    .few-words-about-hotix-section {
+      h1 {
+        font-weight: bold;
+        margin: 0 0 1rem;
+        span {
+          font-weight: 300;
+        }
+      }
+      .footer-platform-links {
+        .platform-link {
+          font-size: 1.2rem;
+          margin-right: 1rem;
+          padding: 0.5rem;
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        .fa-facebook-f {
+          background-color: #00599d;
+        }
+        .fa-twitter {
+          background-color: #37a2f4;
+        }
+        .fa-linkedin-in {
+          background-color: #0a6cb6;
+        }
+      }
+    }
+
+    .stay-in-loop-section {
+      .subscribe-form {
+        direction: rtl;
+        input.add-email {
+          direction: ltr;
+          width: 100%;
+          padding: 1rem;
+          font-size: 0.9rem;
+          border-radius: 30px;
+          border: none;
+          outline: none;
+        }
+        .subscribe-btn {
+          position: relative;
+          bottom: 3rem;
+          right: 0.3rem;
+          font-size: 0.9rem;
+          border-radius: 30px;
+          background-color: rgb(255, 20, 147);
+          color: $color2;
+          font-weight: 600;
+          padding: 0.7rem 0.5rem;
+          border: none;
+          outline: none;
+          width: 8rem;
+          transition: all 1s ease;
+          direction: ltr;
+        }
+        .completed {
+          width: calc(100% - 0.7rem);
+          transition: all 1s ease;
+          cursor: auto;
+        }
+      }
+    }
+  }
+
+  .footer-copyrights-area {
+    @include flex-center(column);
+    hr {
+      border-color: $color2;
+      margin: 0;
+    }
+    span {
+      margin: 0.5rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Footer-container {
+    .Footer {
+      display: none;
+    }
+  }
+}

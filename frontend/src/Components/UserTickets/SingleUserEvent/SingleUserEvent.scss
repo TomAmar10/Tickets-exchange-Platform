@@ -1,0 +1,60 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.user-event-container {
+  background-color: white;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: $border-radius;
+  overflow: hidden;
+  direction: ltr;
+  .Single-user-event {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .event-details {
+      padding: 0.7rem;
+      @include flex-center(column);
+      align-items: flex-start;
+      justify-content: space-between;
+      .event-name {
+        margin: 0 0 0.2rem;
+        font-size: 1.1rem;
+      }
+      span {
+        display: block;
+        &.date {
+          margin-bottom: 0.3rem;
+          font-size: 0.9rem;
+        }
+        &.location {
+          font-weight: 500;
+          font-size: 0.9rem;
+        }
+      }
+      .show-tickets {
+        border: none;
+        background-color: $color1;
+        color: white;
+        border-radius: 30px;
+        padding: 0.2rem 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+    .event-img {
+      width: 12vw;
+      max-height: 8rem;
+    }
+  }
+
+  hr {
+    margin: 0;
+  }
+  .event-tickets {
+    padding: 1rem;
+    .single-ticket {
+      @include flex-center(row);
+      justify-content: space-around;
+    }
+  }
+}

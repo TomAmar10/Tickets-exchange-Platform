@@ -1,0 +1,348 @@
+{
+  "TopNavbar": {
+    "toggleLang": "Toggle language",
+    "login": "Login",
+    "english": "English",
+    "hebrew": "עברית",
+    "modeSwitch": {
+      "seller": "Seller",
+      "buyer": "Buyer"
+    }
+  },
+  "MainAuth": {
+    "signin": "Sign In",
+    "signup": "Sign Up",
+    "copyrights": "© Copyrights lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  "LoginForm": {
+    "header": "Login",
+    "email": "Email address",
+    "password": "Password",
+    "loginBtn": "Log In",
+    "forgotPassword": "Forgot your password?",
+    "newAccount": "New account"
+  },
+  "RegisterForm": {
+    "header": "Create a new account",
+    "quickProcess": "A quick and easy process.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "password": "Password",
+    "other": "Other",
+    "female": "Female",
+    "male": "Male",
+    "profilePicture": "Upload profile picture",
+    "imageError": "Please provide an image smaller than 150000 kb",
+    "emailError": "This email is already in use.",
+    "signupBtn": "Sign Up",
+    "haveAccount": "Already have an account?"
+  },
+  "PlatformsAuth": {
+    "or": "Or",
+    "facebook": "Login with Facebook",
+    "google": "Login with Google"
+  },
+  "SendEmail": {
+    "header": "Find your account",
+    "description": "Please enter your email to search for your account.",
+    "cancelBtn": "Cancel",
+    "searchBtn": "Search",
+    "emailSent": "A reset link was sent to your email",
+    "tryAgain": "Didn't get an email? Try again in ",
+    "seconds": "seconds"
+  },
+  "Verification": {
+    "header": "Email Verification",
+    "description": "Please check your email to see the code",
+    "verifyBtn": "Verify Account",
+    "didntReceive": "Didn't receive code? ",
+    "sendAgain": "Send again"
+  },
+  "NewPassword": {
+    "header": "New Password",
+    "enterPassword": "Enter new password",
+    "confirmPassword": "Confirm your password",
+    "resetBtn": "Reset Password",
+    "successMsg": "Password successfully updated!",
+    "tooLongErr": "Process must be no longer than 5 minutes",
+    "samePasswordErr": "Both passwords must be the same",
+    "goToLogin": "Go to Login"
+  },
+  "ChooseMode": {
+    "hey": "HEY,",
+    "whatToDo": "WHAT WOULD YOU LIKE TO DO TODAY?",
+    "sellBtn": "Sell Ticket",
+    "buyBtn": "Buy Ticket"
+  },
+  "AdminData": {
+    "header": "Hello",
+    "userList": "Users List",
+    "eventList": "Events List",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone number",
+    "email": "Email",
+    "rating": "Rating",
+    "eventName": "Event Name",
+    "date": "Date",
+    "category": "Category",
+    "location": "Location",
+    "status": "Status",
+    "approved": "Approved",
+    "waiting": "Waiting"
+  },
+  "HomeTopHeader": {
+    "header": "First-ever community marketplace built on trust & security",
+    "paragraph": "Sell and buy tickets with no trust or secure issues.",
+    "searchPlaceholder": "Search for events, artists, and locations",
+    "noEvents": "No events to show",
+    "seeAll": "See all results",
+    "createEvent": "Can't find your event? Create a new one!",
+    "dates": "All Dates",
+    "searchBtn": "Search Now"
+  },
+  "PopularEvents": {
+    "header": "Popular Events"
+  },
+  "UpcomingEvents": {
+    "header": "Upcoming Events",
+    "weekDays": [
+      "All Weekdays",
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "anyCategory": "Any Category",
+    "noEvents": "No upcoming events on this day",
+    "viewAll": "View All"
+  },
+  "SideNav": {
+    "admin": "Admin Page",
+    "home": "Home Page",
+    "tickets": "Tickets",
+    "offers": "Offers",
+    "wallet": "Wallet",
+    "notifications": "Notifications",
+    "createEvent": "Create New Event",
+    "favorites": "Favorites",
+    "contact": "Contact",
+    "settings": "Settings",
+    "language": "החלף לעברית",
+    "logout": "Logout"
+  },
+  "EventModal": {
+    "EventPreview": {
+      "about": "About",
+      "category": "Category",
+      "location": "Location",
+      "date": "Date",
+      "maxError": "* Maximum tickets to sell in a single event is 6",
+      "detailsBtn": "Event Details",
+      "buyBtn": "Buy Now",
+      "sellBtn": "Sell Ticket",
+      "loginBtn": "Log In"
+    },
+    "EventForm": {
+      "header": "Create New Event",
+      "eventName": "Event Name",
+      "eventNamePlaceholder": "Give a name to your event",
+      "category": "Category",
+      "location": "Location",
+      "locationPlaceholder": "Enter the event's location",
+      "description": "Description",
+      "descriptionPlaceholder": "Few words about your event",
+      "image": "Image",
+      "imagePlaceholder": "Change event's image",
+      "eventDate": "Event Date",
+      "createBtn": "Create Now",
+      "approveBtn": "Approve Event"
+    },
+    "StepsDots": {
+      "step": "Step"
+    },
+    "NextPrevButtons": {
+      "next": "Next",
+      "prev": "Previous"
+    },
+    "TicketsAmount": {
+      "howManySell": "How many tickets would you like to sell?",
+      "howManyBuy": "How many tickets would you like to buy?",
+      "maxMsg1": "* You already have ",
+      "maxMsg2": "tickets for sale, maximum is 6 per event"
+    },
+    "SaleCompleted": {
+      "header": "CONGRATULATIONS !",
+      "sellerMsg": "Your tickets are available for bids. View all your tickets in your profile, and stay tuned for further actions.",
+      "buyerMsg": "Your bid was successfully submitted. You will receive a notification once the seller responds. Stay tuned for their response and good luck!",
+      "ticketsBtn": "My Tickets",
+      "offersBtn": "My Offers"
+    },
+    "SellerModal": {
+      "TicketsDetails": {
+        "header": "Please fill your ticket information",
+        "types": ["Regular", "VIP", "Student"],
+        "currencies": ["USD", "ILS", "EUR"],
+        "type": "Type",
+        "price": "Original ticket price",
+        "currency": "Currency",
+        "seat": "Seat number",
+        "row": "Seat row",
+        "area": "Seat area",
+        "areaMsg": "* Separate sales are required for tickets with different areas"
+      },
+      "TicketUpload": {
+        "header": "Please upload your tickets",
+        "done": "Done ✔",
+        "dragDrop": "Drag & Drop",
+        "or": "Or",
+        "browse": "Browse",
+        "proof": "Upload a proof of your purchase",
+        "proofRequired": "Proof required..."
+      }
+    },
+    "BuyerModal": {
+      "SelectArea": {
+        "header": "Select Area"
+      },
+      "SellersSlider": {
+        "header": "Choose your seller and make an offer",
+        "SingleSellerCard": {
+          "rated": "people rated",
+          "seats": "Seats",
+          "row": "Row",
+          "tickets": "Tickets"
+        }
+      },
+      "PlaceBid": {
+        "header": "Choose your tickets and place a bid",
+        "seat": "Seat",
+        "row": "Row",
+        "area": "Area",
+        "total": "Total price: "
+      },
+      "SecureDepositMsg": {
+        "hey": "Hey ",
+        "notice": "Please notice,",
+        "paragraph": "Be advised that a temporary deposit may be placed on your card to insure its reliability for future transactions.",
+        "agreeMsg": "I agree to terms & conditions",
+        "nextBtn": "Next"
+      },
+      "PaymentDetails": {
+        "useSaved": "Use saved card:",
+        "mastercard": "MasterCard",
+        "visa": "VISA",
+        "name": "Name on card",
+        "number": "Card number",
+        "expiry": "Expiry date:",
+        "ccv": "CCV"
+      }
+    }
+  },
+  "UserProfile": {
+    "communities": "Communities",
+    "comingSoon": "Coming soon...",
+    "tickets": "'s Tickets",
+    "myTickets": "My Tickets",
+    "viewMore": "View More",
+    "viewLess": "View Less",
+    "feedbacks": "Feedbacks",
+    "rated": "Rate",
+    "history": "Sales History",
+    "favorites": "Favorites",
+    "searchBtn": "Find an event",
+    "noTickets": "No tickets for sale",
+    "noFeedback": "You didn't receive any feedback yet",
+    "noHistory": "No history to show",
+    "noFavorites": "You don't have any favorite yet",
+    "findEvent": "Find Event"
+  },
+  "UserWallet": {
+    "balance": "Account Balance",
+    "creditCards": "Credit Cards",
+    "addCard": "Add a new card",
+    "activities": "Activities",
+    "comingSoon": "Coming soon...",
+    "viewMore": "View More",
+    "coupons": "Coupons",
+    "giftCards": "Gift Cards"
+  },
+  "UserTickets": {
+    "ticketsForSale": "Tickets For Sale",
+    "purchased": "Purchased Tickets",
+    "history": "Tickets History",
+    "favorites": "Favorites",
+    "viewMore": "View More",
+    "viewLess": "View Less",
+    "findEvent": "Find Event",
+    "comingSoon": "Coming soon...",
+    "nothingForSale": "No tickets for sale",
+    "nothingPurchased": "You didn't buy any ticket yet",
+    "noHistory": "No history to show",
+    "noFavorites": "You don't have any favorite yet"
+  },
+  "UserOffers": {
+    "history": "Bids History",
+    "offersSent": "Offers I sent",
+    "offersDeclined": "Rejected offers",
+    "offersReceived": "Offers I received",
+    "comingSoon": "Coming soon...",
+    "noHistory": "No history to show",
+    "noBids": "No bids to show",
+    "viewMore": "View More",
+    "viewLess": "View Less",
+    "findEvent": "Find Event",
+    "SingleHistoryBid": {
+      "sentOn": "Offer was sent on",
+      "confirmedBy": "Offer confirmed by",
+      "declinedBy": "Offer declined by",
+      "waitingFor": "Waiting for",
+      "toResponse": "to response"
+    }
+  },
+  "confirmDeposit": "Confirm deposit",
+  "BidStatusModal": {
+    "header": "Event Status",
+    "bidPrice": "Bid price",
+    "seat": "Seat",
+    "row": "Row",
+    "area": "Area",
+    "closeBtn": "Close"
+  },
+  "SecureDepositMsg": {
+    "hey": "Hey ",
+    "notice": "Please notice,",
+    "paragraph": "Be advised that a temporary deposit may be placed on your card to insure its reliability for future transactions.",
+    "agreeMsg": "I agree to terms & conditions",
+    "nextBtn": "Next"
+  },
+  "PaymentDetails": {
+    "useSaved": "Use saved card:",
+    "mastercard": "MasterCard",
+    "visa": "VISA",
+    "name": "Name on card",
+    "number": "Card number",
+    "expiry": "Expiry date:",
+    "ccv": "CCV"
+  },
+  "NoBidsToShow": {
+    "noEvents": "No upcoming events to show",
+    "nothingReceived": "You didn't receive any bid so far",
+    "nothingSent": "You didn't place any bid so far",
+    "lookingForTicket": "Looking for tickets to an upcoming event?",
+    "lookingToSell": "Looking for an event to sell your ticket?",
+    "lookingToBuy": "Looking for an event to place a bid?",
+    "clickHereBtn": "CLICK HERE"
+  },
+  "SingleUserEvent": {
+    "click": "Click here to see ",
+    "tickets": " Tickets",
+    "ticket": "Ticket",
+    "hide": "Hide Tickets"
+  }
+}

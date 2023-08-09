@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.UserPageHead {
+  @include flex-center(row);
+  justify-content: space-around;
+  background-color: $color2;
+  border-radius: 10px;
+  padding: 2rem 0;
+  width: 100%;
+  margin-bottom: 2rem;
+  .profile-details {
+    @include flex-center(column);
+    border-right: 1px lighten(#ccc, 10%) solid;
+    padding: 0 2rem;
+    min-width: 25%;
+    .profile-img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+    }
+    .profile-name {
+      font-weight: bold;
+      text-align: center;
+      color: darken($color1, 20%);
+    }
+    .feedbacks-amount {
+      font-size: 0.9rem;
+    }
+  }
+  .nav-buttons {
+    @include flex-center(row);
+    gap: 1rem;
+    padding: 0 2rem;
+    width: 100%;
+    .single-button {
+      @include flex-center(row);
+      @include basic-button(transparent);
+      border: 1px darken($color1, 20%) solid;
+      color: darken($color1, 20%);
+      text-decoration: none;
+      gap: 1rem;
+      width: 100%;
+      &.active-nav {
+        @include basic-button(darken($color1, 20%));
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+
+.sideNav-profile-img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.sideNav-profile-name-area {
+  display: flex;
+  flex-direction: column;
+
+  .sideNav-profile-name {
+    font-weight: bold;
+  }
+  .sideNav-profile-email {
+    font-size: 0.7rem;
+  }
+}

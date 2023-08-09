@@ -1,0 +1,47 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.StepsDots {
+  width: 100%;
+  margin: 1rem 0 0;
+  @include flex-center(column);
+  .dots-splitter {
+    position: relative;
+    width: calc(100% - 2rem);
+    border: 3px lighten(#ccc , 10%) solid;
+    margin-top: -0.8rem;
+  }
+  .dots-area {
+    width: 100%;
+    @include flex-center(row);
+    justify-content: space-between;
+    .single-step-holder {
+      @include flex-center(column);
+      z-index: 10;
+      .step-span {
+        font-size: 0.8rem;
+        color: darken($color1, 20%);
+      }
+      .single-step {
+        @include flex-center(column);
+        padding: 0.4rem;
+        border: 1px #ccc solid;
+        border-radius: 50%;
+        background-color: $color2;
+        font-size: 0.8rem;
+        width: 1.3rem;
+        height: 1.3rem;
+        cursor: auto;
+        &.active-slide {
+          border: 2px darken($color1, 20%) solid;
+        }
+        &.previous {
+          background-color: darken($color1, 20%);
+          border: 2px darken($color1, 20%) solid;
+          color: $color2;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

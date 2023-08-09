@@ -1,0 +1,163 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.SingleEventCard-container {
+  width: 320px;
+  .SingleEventCard {
+    width: 100%;
+    height: 490px;
+    background-color: $color2;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+      .event-card-img {
+        transform: scale(1.1);
+      }
+      .event-card-content {
+        max-height: 100%;
+        .top-section {
+          max-height: 10rem;
+        }
+      }
+    }
+
+    .event-card-img-holder {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 65%;
+      img.event-card-img {
+        height: 100%;
+        width: 100%;
+        transition: all 0.5s ease;
+      }
+    }
+
+    .event-card-content {
+      width: 100%;
+      position: absolute;
+      @include flex-center(column);
+      justify-content: space-between;
+      transition: all 0.5s ease-out;
+      border: 1px #e0dfeb solid;
+      padding: 1rem;
+      bottom: 1rem;
+      min-height: 36%;
+      max-height: 36%;
+      background-color: $color2;
+      border-radius: 10px;
+      z-index: 2;
+      overflow: hidden;
+      .top-section {
+        @include flex-center(row);
+        transition: all 0.5s ease-out;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-height: 4.4rem;
+        overflow: hidden;
+        .about-event {
+          width: 100%;
+          .event-name {
+            width: 100%;
+            text-align: start;
+            margin: -5px 0 5px;
+            font-size: 1.3rem;
+            color: #252525;
+            font-weight: 600;
+            line-height: normal;
+          }
+          .description {
+            font-size: 0.8rem;
+            color: darken($disabled-color, 20%);
+            margin: 0;
+          }
+        }
+        .icons-area {
+          display: flex;
+          gap: 0.5rem;
+          .favorite-btn {
+            animation: heartAppear 0.3s ease-in-out;
+            cursor: pointer;
+            &.favorite{
+              color: red;
+            }
+          }
+        }
+      }
+      hr {
+        margin: 1rem auto;
+        width: 80%;
+      }
+      .bottom-section {
+        width: 100%;
+        @include flex-center(row);
+        justify-content: space-around;
+        .date,
+        .location {
+          @include flex-center(column);
+          width: calc(100% / 3);
+          span {
+            font-size: 12px;
+          }
+        }
+        .get-ticket-btn {
+          @include basic-button($color1);
+          padding: 0.5rem 0;
+          font-size: 14px;
+          height: 40px;
+          width: calc(100% / 3);
+          border-radius: 3px;
+        }
+      }
+    }
+    // Card for upcoming events !!! --------------
+    &.upcoming {
+      height: 330px;
+      hr {
+        display: none;
+      }
+      .event-card-content {
+        .top-section {
+          border-bottom: 1px rgb(217, 217, 217) solid;
+          margin-bottom: 1rem;
+          .about-event {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .hashtags {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .single-hashtag {
+      border-radius: 60px;
+      border: 1px solid #f5167e;
+      color: #f5167e;
+      background-color: transparent;
+      font-size: 0.9rem;
+      padding: 0.3rem 1rem;
+      min-width: 6rem;
+      &:last-child {
+        border: 1px solid #2dcc68;
+        color: #2dcc68;
+      }
+      &:first-child {
+        border: 1px solid #fb8a2e;
+        color: #fb8a2e;
+      }
+    }
+  }
+}
+
+@keyframes heartAppear {
+  from {
+    transform: scale(0.8); /* Start with 0 scale (invisible) */
+  }
+  to {
+    transform: scale(1); /* Grow to normal size (scale 1) */
+  }
+}

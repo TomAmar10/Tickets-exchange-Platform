@@ -1,0 +1,21 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.NextPrevButtons {
+  @include flex-center(row);
+  justify-content: space-between;
+  width: 100%;
+  direction: rtl;
+  &.hebrew{
+    direction: ltr;
+  }
+  .sell-ticket-nav {
+    @include basic-button($color1);
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: 6rem;
+    &:disabled {
+      background-color: #ccc;
+    }
+  }
+}

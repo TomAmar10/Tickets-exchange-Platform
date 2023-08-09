@@ -1,0 +1,66 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+
+.AdminData {
+  width: 100%;
+  @include flex-center(column);
+  .admin-header {
+    margin: 4rem 0;
+  }
+
+  .table-container {
+    @include flex-center(column);
+    margin-bottom: 5rem;
+    min-width: 70%;
+    max-width: 90%;
+    .table-header {
+      width: 100%;
+      margin-bottom: 2rem;
+      text-decoration: underline;
+    }
+    table {
+      width: 100%;
+      outline: 1px $disabled-color solid;
+      border-radius: $border-radius;
+      thead {
+        background-color: $color1;
+        color: $color2;
+        border-bottom: 1px $disabled-color solid;
+      }
+      tr {
+        border-bottom: 1px $disabled-color solid;
+        &.single-event,&.single-user {
+          &:hover {
+            background-color: lighten($disabled-color,15%);
+            cursor: pointer;
+          }
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      th,
+      td {
+        padding: 0.5rem 1rem;
+        text-align: center;
+      }
+      td {
+        .approved-icon {
+          color: $green-color;
+          font-size: 1.5rem;
+        }
+        .waiting-icon {
+          color: rgb(231, 199, 20);
+          font-size: 1.5rem;
+        }
+        .waiting,
+        .approved {
+          @include flex-center(column);
+          span {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

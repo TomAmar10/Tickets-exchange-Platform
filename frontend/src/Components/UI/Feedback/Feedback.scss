@@ -1,0 +1,57 @@
+@import "../../../styles/mixin.scss";
+@import "../../../styles/variables.scss";
+@import "../../../styles/globals.scss";
+
+.Feedback {
+  @include flex-center(column);
+  color: darken($color1, 20%);
+  .feedback-header {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+  .user-image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 20px, rgba(0, 0, 0, 0.23) 0px 6px 10px;  
+}
+  .star-rating {
+    font-size: 2.5rem;
+    margin-top: -0.5rem;
+  }
+  .feedback-area {
+    border-radius: $border-radius;
+    outline: none;
+    width: 22rem;
+    margin-top: 1rem;
+    &::placeholder {
+      color: $disabled-color;
+    }
+  }
+  .error {
+    color: red;
+    font-size: 0.9rem;
+  }
+  .feedback-buttons {
+    width: 100%;
+    @include flex-center(row);
+    justify-content: space-between;
+    margin-top: 2rem;
+    .feedback-btn {
+      @include basic-button(darken(red, 5%));
+      font-size: 0.9rem;
+      padding: 0.3rem 0.5rem;
+      width: 5rem;
+      font-weight: 500;
+      &.submit {
+        background-color: $green-color;
+        &:hover {
+          background-color: darken($green-color, 5%);
+        }
+      }
+    }
+  }
+}

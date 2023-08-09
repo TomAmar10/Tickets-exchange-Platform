@@ -1,0 +1,60 @@
+@import "../../../styles/mixin.scss";
+@import "../../../styles/variables.scss";
+
+.TicketsAmount {
+  @include flex-center(column);
+  .current-event-details {
+    @include flex-center(row);
+    flex-direction: row !important; // The slick.scss inside the PopularEvents is disturbing
+    gap: 1rem;
+    min-width: 20rem;
+    height: 6rem;
+    margin:2rem  0;
+    border: 1px #ccc solid;
+    border-radius: $border-radius;
+    .event-details {
+      @include flex-center(column);
+      justify-content: space-between;
+      font-size: 0.9rem;
+      height: 100%;
+      padding: 0.5rem;
+      .event-name {
+        font-weight: bold;
+      }
+    }
+    .current-event-image {
+      width: 10rem;
+      height: 100%;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+  .ticket-section-header{
+    margin-bottom: 1rem;
+  }
+  .amount-options-area {
+    @include flex-center(row);
+    gap: 1rem;
+    .tickets-amount-option {
+      @include basic-button($color2);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      width: 3rem;
+      height: 3rem;
+      color: rgb(163, 162, 162);
+      &:hover {
+        background-color: darken($color2, 5%);
+      }
+      &.current-amount {
+        background-color: darken($color1, 30%);
+        color: $color2;
+      }
+      &:disabled {
+        background-color: $disabled-color;
+      }
+    }
+  }
+  .max-tickets-msg {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: darken($disabled-color, 20%);
+  }
+}

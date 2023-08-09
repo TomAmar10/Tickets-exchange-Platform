@@ -1,0 +1,17 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.SellerModal {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  min-width: 40rem;
+
+  .buy-ticket-section-header {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: darken($color1, 30%);
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+
+.AuthContainer {
+  overflow: hidden;
+  max-height: 100vh;
+  &.hebrew {
+    direction: rtl;
+  }
+  .auth-bg-img {
+    width: 100%;
+    height: 100vh;
+  }
+  .forms-container {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0)
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    @include flex-center(column);
+    justify-content: flex-start;
+    padding-top: 3rem;
+  }
+  .forms-background {
+    background-color: rgb(255, 255, 255, 0.7);
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    right: -40%;
+    top: -120vh;
+    transform: rotate(20deg);
+  }
+}

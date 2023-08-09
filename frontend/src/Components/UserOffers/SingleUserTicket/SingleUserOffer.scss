@@ -1,0 +1,94 @@
+@import "../../../styles/mixin.scss";
+@import "../../../styles/variables.scss";
+@import "../../../styles/globals.scss";
+
+.SingleUserOffer {
+  @extend .userTicketCard;
+  overflow: visible;
+  height: fit-content;
+  z-index: 1 !important;
+  hr {
+    margin: 0 0 0.5rem;
+  }
+  .actions-area {
+    text-align: center;
+    width: 100%;
+    .view-status-btn {
+      @include basic-button($color1);
+      width: 100%;
+      font-weight: 500;
+    }
+    .cancel-offer-btn {
+      @include basic-button(lighten($disabled-color, 20%));
+      margin: 0.5rem 0;
+      width: 100%;
+      color: red;
+      font-weight: 500;
+      &:hover {
+        background-color: lighten($disabled-color, 18%);
+      }
+    }
+  }
+  .reply-area {
+    @include flex-center(row);
+    justify-content: space-around;
+    width: 100%;
+    .reply-btn {
+      border: none;
+      background: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      &.accept {
+        color: $green-color;
+        &:hover {
+          background-color: lighten($green-color, 64%);
+        }
+      }
+      &.decline {
+        color: red;
+        &:hover {
+          background-color: lighten(red, 48%);
+        }
+      }
+    }
+  }
+  .new-bid-area {
+    .place-new-bid-btn {
+      @include basic-button($color1);
+      width: 100%;
+      font-weight: 500;
+      @include flex-center(row);
+      gap: 0.5rem;
+    }
+    .new-bid-input {
+      border-radius: $border-radius;
+      outline: none;
+      text-align: center;
+      &:focus {
+        box-shadow: rgba($color1, 0.4) 0px 0px 0px 2px;
+        border-color: lighten($color1, 60%);
+      }
+    }
+    .new-bid-buttons {
+      @include flex-center(row);
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      .submit-new-bid-btn {
+        @include basic-button($green-color);
+        @include flex-center(row);
+        width: 100%;
+        font-weight: 500;
+        padding: 0.5rem 0;
+        gap: 0.5rem;
+      }
+      .cancel-new-bid-btn {
+        @include basic-button(red);
+        padding: 0.5rem 0;
+        width: 100%;
+        font-weight: 500;
+        gap: 0.5rem;
+      }
+    }
+  }
+}

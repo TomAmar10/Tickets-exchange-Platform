@@ -1,0 +1,17 @@
+.DatePicker {
+  width: 40%;
+  display: inline-block;
+  position: relative;
+  direction: ltr;
+  .search-input {
+    width: 100% !important;
+    cursor: pointer;
+  }
+}
+.calendarElement {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  border: 1px #ccc solid;
+  z-index: 999;
+}

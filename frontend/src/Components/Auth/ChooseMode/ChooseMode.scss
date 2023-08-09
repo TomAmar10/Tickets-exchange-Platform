@@ -1,0 +1,41 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.ChooseMode {
+  h1.sell-buy-greet-user {
+    color: $color1;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .choose {
+    text-align: center;
+
+    span {
+      color: #9e9b9b;
+      font-size: 0.9rem;
+    }
+
+    .choose-buttons-area {
+      @include flex-center(column);
+      a {
+        margin-top: 2rem;
+        width: 100%;
+      }
+      button {
+        width: 100%;
+      }
+
+      button.sell-ticket-btn {
+        @include basic-button($color1);
+        font-weight: bold;
+      }
+      button.buy-ticket-btn {
+        @include basic-button($color3);
+        font-weight: bold;
+      }
+    }
+  }
+}

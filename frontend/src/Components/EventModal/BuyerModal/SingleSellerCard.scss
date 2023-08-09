@@ -1,0 +1,10 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+@import "../../../styles/globals.scss";
+
+.single-seller-container {
+  width: 13.4rem;
+  .SingleSellerCard {
+    @extend .userTicketCard;
+  }
+}

@@ -1,0 +1,64 @@
+@import "./variables.scss";
+
+@mixin flex-center($dir) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $dir;
+}
+
+@mixin auth-form {
+  width: 27rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  padding: 1rem;
+  @include flex-center(column);
+
+  h3 {
+    text-align: center;
+  }
+
+  .form-input-area {
+    width: 100%;
+  }
+
+  .form-control {
+    margin: 0.3rem 0;
+    padding: 0.6rem 1rem;
+    &:focus {
+      box-shadow: rgba($color1, 0.4) 0px 0px 0px 2px;
+      border-color: lighten($color1, 60%);
+    }
+  }
+}
+
+@mixin basic-button($bgColor) {
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background-color: $bgColor;
+  @if $bgColor == $color2 {
+    color: $color3;
+  }
+  &:hover{
+    background-color: darken($bgColor,5%);
+  }
+}
+
+
+
+@mixin mobile {
+  @media (max-width: $mobile-medium) {
+    @content;
+  }
+  @media (max-width: $mobile-small) {
+    background-color: green;
+  }
+  @media (max-width: $mobile-xs) {
+    background-color: pink;
+  }
+}

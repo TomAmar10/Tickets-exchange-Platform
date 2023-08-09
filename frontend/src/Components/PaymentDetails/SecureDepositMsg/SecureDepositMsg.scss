@@ -1,0 +1,45 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.SecureDepositMsg {
+  text-align: center;
+  min-height: 15rem;
+  border-radius: $border-radius;
+  padding: 1rem;
+  width: 100%;
+  @include flex-center(column);
+  &.hebrew {
+    direction: rtl;
+  }
+
+  .sell-ticket-section-header {
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 4rem;
+    max-width: 25rem;
+  }
+  span {
+    font-size: 0.8rem;
+  }
+  .next-btn {
+    @include basic-button($color1);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    &:disabled {
+      background-color: $disabled-color;
+    }
+  }
+  .checkbox-container {
+    @include flex-center(row);
+    gap: 0.5rem;
+
+    input {
+      width: 0.9rem;
+      height: 0.9rem;
+      cursor: pointer;
+    }
+  }
+}

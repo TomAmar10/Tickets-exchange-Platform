@@ -1,0 +1,62 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.EventPreview {
+  @include flex-center(column);
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  min-height: 30rem;
+  img {
+    height: 10rem;
+    width: 100%;
+    max-width: 20rem;
+    // object-fit: cover;
+    // object-position: top center;
+    border-radius: $border-radius;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  }
+  .event-data {
+    margin: 2rem 0 1rem;
+    width: 100%;
+    h5 {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .data-row {
+      // text-align: left;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+      display: flex;
+      h6 {
+        margin: 0 0.5rem;
+        font-weight: bold;
+        width: 6rem;
+      }
+    }
+  }
+  .user-error {
+    font-size: 0.9rem;
+  }
+  .event-preview-buttons {
+    display: flex;
+    gap: 1rem;
+    .event-details-btn {
+      @include basic-button($color2);
+      font-size: 1rem;
+      border: 1px $color3 solid;
+      font-weight: 400;
+      width: 9rem;
+    }
+    .buy-now-btn {
+      @include basic-button($color1);
+      font-size: 1rem;
+      font-weight: 400;
+      width: 9rem;
+      &:disabled {
+        background-color: $disabled-color;
+      }
+    }
+  }
+}

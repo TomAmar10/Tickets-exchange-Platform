@@ -1,0 +1,72 @@
+@import "../../../styles/mixin.scss";
+@import "../../../styles/variables.scss";
+
+$register-input-padding: 0.4rem 1rem;
+
+.RegisterForm {
+  @include auth-form();
+  h3 {
+    margin-bottom: 0;
+  }
+  .quick-easy {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    padding: $register-input-padding;
+    &:disabled {
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+  .form-input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .file-label {
+      cursor: pointer;
+      width: 100%;
+    }
+    .file-icon {
+      position: relative;
+      margin-left: -2rem;
+      margin-right: 0.5rem;
+      color: darken($disabled-color, 30%);
+      font-size: 1.5rem;
+      &.hebrew {
+        margin-right: -2rem;
+        margin-left: 0.5rem;
+      }
+    }
+    .image-error {
+      font-size: 0.8rem;
+      color: red;
+    }
+  }
+
+  .user-full-name {
+    display: flex;
+    gap: 0.6rem;
+  }
+
+  .auth-login-button {
+    @include basic-button($color1);
+    font-weight: bold;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .form-link {
+    color: $color1;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline 1px;
+    }
+  }
+}

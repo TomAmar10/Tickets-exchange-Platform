@@ -1,0 +1,85 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.PlaceBid {
+  @include flex-center(column);
+  width: 100%;
+  .buy-ticket-section-header{
+    margin: 2rem 0;
+  }
+  .all-tickets {
+    @include flex-center(row);
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: darken($color1, 30%);
+    width: 100%;
+    .single-ticket-label {
+      @include flex-center(row);
+      width: 45%;
+      border: 1px lighten($color1, 40%) solid;
+      border-radius: $border-radius;
+      padding: 0.5rem;
+      cursor: pointer;
+      &:hover {
+        background-color: #f3f7ff;
+      }
+      &.selected {
+        background-color: #d7e3fb;
+      }
+      .single-ticket {
+        width: 100%;
+        .single-ticket-headers {
+          display: flex;
+          justify-content: space-between;
+          h6 {
+            width: 100%;
+            text-decoration: underline;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+        .single-ticket-details {
+          @extend .single-ticket-headers;
+          span {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .total-price{
+    margin-top: 3rem;
+    span{
+      margin: 0 1rem;
+    }
+  }
+
+  // .bid-area {
+  //   width: 50%;
+  //   @include flex-center(column);
+  //   .buy-ticket-section-header {
+  //     margin: 0 0 1rem 0;
+  //   }
+  //   .bid-amount-input {
+  //     width: 100%;
+  //     text-align: center;
+  //     padding: 0.5rem;
+  //     border: 1px #ccc solid;
+  //     outline: none;
+  //     border-radius: $border-radius;
+  //     &:focus {
+  //       box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px;
+  //     }
+  //   }
+  //   .price-calculate {
+  //     font-size: 0.8rem;
+  //     color: #8a8a8a;
+  //   }
+  //   .current-bid {
+  //     font-weight: bold;
+  //     margin-top: 1rem;
+  //   }
+  // }
+}

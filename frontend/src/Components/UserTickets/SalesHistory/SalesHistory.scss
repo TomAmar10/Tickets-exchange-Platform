@@ -1,0 +1,10 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.SalesHistory {
+    // Styled in globals.scss
+  .sales-history-container {
+    @include flex-center(column);
+    gap: 1rem;
+  }
+}

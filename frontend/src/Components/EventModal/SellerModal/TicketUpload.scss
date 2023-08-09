@@ -1,0 +1,109 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.TicketUpload {
+  @include flex-center(column);
+  color: darken($color1, 30%);
+  .sell-ticket-section-header {
+    font-weight: bold;
+    margin: 1rem 0 2rem;
+  }
+  .input-label-container {
+    @include flex-center(column);
+    align-items: center;
+    justify-content: space-between;
+    border: 1px lighten($color1, 40%) solid;
+    border-radius: 10px;
+    padding: 1rem;
+    .upload-ticket-label {
+      @include flex-center(column);
+      justify-content: start;
+      cursor: pointer;
+      width: 22rem;
+      border-radius: $border-radius;
+      text-align: center;
+      font-size: 0.9rem;
+      height: 8rem;
+      span {
+        font-weight: bold;
+      }
+      .fa-file-lines {
+        color: #878686;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .done-check-span {
+        font-size: 1.1rem;
+      }
+      &:hover .browse-span {
+        text-decoration: underline;
+      }
+    }
+    .user-files-area {
+      display: flex;
+      align-items: center !important;
+      justify-content: center;
+      gap: 0.6rem;
+      .single-ticket {
+        height: 4rem;
+        .ticket-image {
+          height: 100%;
+          width: 3rem !important;
+          height: 3rem !important;
+          border-radius: $border-radius;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .ticket-image-holder {
+          @extend .ticket-image;
+          font-weight: bold;
+          color: #878686;
+          @include flex-center(column);
+        }
+        .remove-btn-holder {
+          position: absolute;
+          margin-left: 2.5rem;
+          margin-top: -0.5rem;
+          cursor: pointer;
+        }
+        .fa-trash {
+          color: #878686;
+          font-size: 0.8rem;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          background-color: #e6e6e6;
+          padding: 0.3rem;
+          border-radius: 50%;
+        }
+        .image-index {
+          color: #878686;
+          text-align: center;
+          margin-left: 1.5rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .buyer-proof {
+      text-align: center;
+      .proof-header {
+        display: block;
+      }
+      .proof-input-holder {
+        margin-top: 1rem;
+        .proof-browse-btn {
+          @include basic-button(darken($color1, 30%));
+          font-size: 0.9rem;
+          font-weight: 400;
+          border-radius: 0 5px 5px 0;
+          border: 1px #ccc solid;
+          padding: 0.3rem 0.5rem;
+        }
+        .text-field {
+          padding: 0.26rem;
+          font-size: 0.9rem;
+          border: 1px #ccc solid;
+          border-radius: 5px 0 0 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/globals.scss";
+
+$steps-height: 13.5rem;
+
+.BidStatusModal {
+  background-color: $color2;
+  padding: 1rem 3rem;
+  border-radius: $border-radius;
+  max-width: 40rem;
+  overflow-y: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+
+  .status-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .bid-ticket {
+    @include flex-center(row);
+    gap: 3rem;
+    margin: 2rem 0;
+    border-radius: $border-radius;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 0.9rem;
+    .bid-ticket-section {
+      height: 6rem;
+      @include flex-center(column);
+      justify-content: space-around;
+      .seat-details {
+        @include flex-center(row);
+        gap: 1rem;
+        margin-top: 0.2rem;
+        .seat-section {
+          @include flex-center(column);
+          font-weight: bold;
+          .detail-header {
+            margin: 0 0 -0.3rem 0;
+            font-size: 0.7rem;
+            font-weight: 400;
+          }
+        }
+      }
+      .bid-price {
+        font-weight: bold;
+        font-size: 0.7rem;
+        margin-right: 1rem;
+    }
+    .price {
+          font-weight: bold;
+        padding: 0.2rem 0.5rem;
+        border-radius: $border-radius;
+        border: 1px $disabled-color solid;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .dots-line-through {
+    position: absolute;
+    border-right: 1px darken($disabled-color, 15%) solid;
+    z-index: 0;
+    height: calc($steps-height - 1rem);
+    margin-top: 0.5rem;
+  }
+  .steps-container {
+    @include flex-center(column);
+    align-items: flex-start;
+    height: $steps-height;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin: 1rem -0.3rem;
+    .single-step {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      z-index: 1;
+      .step-dot {
+        width: 0.7rem;
+        height: 0.7rem;
+        background-color: lighten($disabled-color, 10%);
+        border-radius: 50%;
+        &.done {
+          background-color: lighten($color1, 0%);
+        }
+      }
+    }
+  }
+  .ok-button-holder {
+    text-align: center;
+    .ok-button {
+      @include basic-button($color1);
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding: 0.3rem 2rem;
+      margin-top: 2rem;
+    }
+  }
+}

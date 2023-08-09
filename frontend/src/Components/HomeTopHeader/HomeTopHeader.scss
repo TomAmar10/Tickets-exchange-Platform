@@ -1,0 +1,323 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.HomeTopHeader {
+  height: 70vh;
+  width: 100%;
+  z-index: 1;
+  @include flex-center(column);
+  justify-content: space-between;
+  background: linear-gradient(
+        to bottom right,
+        rgba(22, 8, 47, 0.2) 0%,
+        rgba(255, 255, 255, 0) 50%
+      )
+      bottom right / 50% 50% no-repeat,
+    linear-gradient(
+        to bottom left,
+        rgba(22, 8, 47, 0.2) 0%,
+        rgba(255, 255, 255, 0) 50%
+      )
+      bottom left / 50% 50% no-repeat,
+    linear-gradient(
+        to top left,
+        rgba(22, 8, 47, 0.2) 0%,
+        rgba(255, 255, 255, 0) 50%
+      )
+      top left / 50% 50% no-repeat,
+    linear-gradient(
+        to top right,
+        rgba(22, 8, 47, 0.2) 0%,
+        rgba(255, 255, 255, 0) 50%
+      )
+      top right / 50% 50% no-repeat,
+    radial-gradient(
+      112.41% 57.96% at 33.02% 44.58%,
+      rgba(0, 0, 0, 0.28) 22.06%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #5f17e1;
+  .top-main-area {
+    @include flex-center(row);
+    height: 100%;
+    width: 85%;
+    .application-header {
+      @include flex-center(column);
+      justify-content: flex-start;
+      margin-top: -5rem;
+      color: $color2;
+      width: 50%;
+      h1 {
+        width: 100%;
+        font-weight: bold;
+        font-size: 2.3rem;
+      }
+      p {
+        width: 100%;
+      }
+      .buttons {
+        width: 100%;
+        @include flex-center(row);
+        justify-content: flex-start;
+        gap: 1rem;
+        .header-btn {
+          @include basic-button($color2);
+          font-weight: 500;
+          color: $color1;
+          border: 1px $color2 solid;
+          &:last-child {
+            @include basic-button(transparent);
+            border: 1px $color2 solid;
+          }
+        }
+      }
+    }
+    .top-image-container {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .top-image {
+        width: 100%;
+      }
+    }
+  }
+
+  .inputs-container {
+    color: black;
+    width: 80%;
+    filter: drop-shadow(0px 10px 50px rgba(61, 55, 241, 0.45));
+    .search-section {
+      margin-top: -5rem;
+      @include flex-center(row);
+      justify-content: space-between;
+      background-color: $color2;
+      border-radius: 40px;
+      padding: 0.5rem 1rem;
+      .search-input {
+        font-size: 1.1rem;
+        padding: 0.5rem 2rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        &:first-child {
+          width: 60%;
+        }
+      }
+      .separator {
+        height: 2.5rem;
+        width: 0;
+        border-right: 1px gray solid;
+      }
+      .fa-magnifying-glass {
+        font-size: 1.2rem;
+      }
+    }
+    .dropdown {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      background-color: $color2;
+      padding: 1rem;
+      border: 1px black solid;
+      border-top: none;
+      border-radius: 5px;
+      border-color: lighten($color1, 30%);
+      max-height: 25rem;
+      overflow: auto;
+      .single-result {
+        width: 100%;
+        border-bottom: 1px #ccc solid;
+        padding: 0.5rem;
+        gap: 1rem;
+        cursor: pointer;
+        @include flex-center(row);
+        justify-content: start;
+        &:hover {
+          background-color: #eeebeb;
+        }
+        .result-image {
+          width: 4rem;
+          height: 100%;
+        }
+        .result-name {
+          margin: 0;
+        }
+        .result-description {
+          color: rgb(121, 120, 120);
+          font-size: 0.9rem;
+        }
+      }
+
+      .see-all-results-btn {
+        margin-top: 1rem;
+        padding: 0.2rem 1rem;
+        border: none;
+        border-radius: $border-radius;
+        background-color: $color1;
+        color: $color2;
+        width: 100%;
+        &:hover {
+          background-color: darken($color1, 10%);
+        }
+      }
+      .create-new-event {
+        @extend .see-all-results-btn;
+        background-color: lighten($color1, 45%);
+        color: black;
+        margin-top: 0.5rem;
+        &:hover {
+          background-color: lighten($color1, 40%);
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .HomeTopHeader {
+    .top-main-area {
+      width: 95%;
+      .top-image-container {
+        min-width: 40rem;
+      }
+    }
+    .inputs-container {
+      width: 90%;
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .HomeTopHeader {
+    height: 55vh;
+    .top-main-area {
+      .top-image-container {
+        min-width: 35rem;
+        .top-image {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .HomeTopHeader {
+    .top-main-area {
+      width: 90%;
+      .application-header {
+        width: 60%;
+        margin-top: -7rem;
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      .top-image-container {
+        min-width: auto;
+        width: 50%;
+        .top-image {
+          width: 100%;
+        }
+      }
+    }
+    .inputs-container {
+      width: 95%;
+      .search-section {
+        .fa-magnifying-glass {
+          display: none !important;
+        }
+        .search-input {
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .HomeTopHeader {
+    margin-bottom: 5rem;
+    .top-main-area {
+      @include flex-center(column);
+      width: 100%;
+      gap: 1rem;
+      .application-header {
+        height: 100%;
+        @include flex-center(column);
+        align-items: flex-end;
+        width: 80%;
+        margin-right: 0;
+        margin-top: 2rem;
+      }
+      .top-image-container {
+        min-width: auto;
+        width: 50%;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .inputs-container {
+      width: 95%;
+      .search-section {
+        @include flex-center(column);
+        justify-content: center;
+        border-radius: 10px;
+        padding: 1rem;
+        gap: 1rem;
+        .search-input {
+          margin: 0.3rem;
+          padding: 0;
+          border-bottom: 1px rgb(200, 198, 198) solid;
+          &:first-child {
+            width: 90%;
+          }
+        }
+        .DatePicker {
+          width: 90%;
+        }
+        .separator,
+        .search-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .HomeTopHeader {
+    .inputs-container {
+      .search-section {
+        .search-input {
+          font-size: 1rem;
+          &:first-child {
+            width: 100%;
+          }
+        }
+        .DatePicker {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// HEIGHT
+// @media only screen and (max-height: 800px) {
+//   .HomeTopHeader {
+//     .top-main-area {
+//       .top-image-container {
+//         height: 90%;
+//       }
+//     }
+//   }
+// }
+// @media only screen and (max-height: 700px) {
+//   .HomeTopHeader {
+//     .top-main-area {
+//       .top-image-container {
+//         height: 100%;
+//       }
+//     }
+//   }
+// }

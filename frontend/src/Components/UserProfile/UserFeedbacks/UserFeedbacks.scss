@@ -1,0 +1,10 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixin.scss";
+
+.UserFeedbacks {
+    // Styled in globals.scss
+  .feedbacks-container {
+    @include flex-center(column);
+    gap: 1rem;
+  }
+}
